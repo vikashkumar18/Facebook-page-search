@@ -1,0 +1,46 @@
+<!doctype html>	
+<!--[if lt IE 7 ]> <html class="no-js ie6 ie" lang="en"> <![endif]-->
+<!--[if IE 7 ]>    <html class="no-js ie7 ie" lang="en"> <![endif]-->
+<!--[if IE 8 ]>    <html class="no-js ie8 ie" lang="en"> <![endif]-->
+<!--[if IE 9 ]>	   <html class="no-js ie9 ie" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--> <html class="no-js no-ie" lang="en"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+	<title>Facebook Page Search</title>
+	<meta name="description" content="">
+	<meta name="author" content="vikash">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+
+	<link rel="stylesheet" type="text/css" href="stylesheets/style.css" />
+	<script src="javascripts/facebookPageSearch.js"></script>
+</head>
+<body>
+	
+	<div class="container">
+
+
+	
+	
+	<input type="text" placeholder="Facebook Page" id="searchField" autocomplete="on">
+	<button id="searchButton">Search</button>
+	<div id="searchList" >
+	
+	</div>
+	</div>
+	<div id="favourites" class="hide">
+		<span style="-webkit-transform: rotate(90deg);">Favourites </span>
+	</div>
+	
+	
+	
+</body>
+
+</html>
+<script>
+	var accessToken = "";
+	ShowFBPAges("searchField","searchButton","searchList","favourites",accessToken);
+</script>
